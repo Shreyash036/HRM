@@ -1,0 +1,60 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dash board</title>
+    <!-- Include CSS files here -->
+    <link  href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="rent.css">
+</head>
+<body>
+   
+   
+
+    <!-- JavaScript to include sidebar -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            $("#sidebar").load("side-nav.html");
+        });
+    </script>
+    <div id="sidebar"></div>
+
+   
+    <br>
+    <br>
+    <!-- end header nav -->
+    <!-- Include side navigation -->
+    <section class="wrapper" style="margin-left: 16%;margin-top: -11%;">
+        <div class="col-md-12">
+            <h1>Dash board</h1>
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="../app/users.html">
+                        <div class="alert alert-warning" role="alert">
+                            <b>Registered Users: <span class="badge badge-pill badge-success">[Replace with count]</span></b>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="../app/list.html">
+                        <div class="alert alert-warning" role="alert">
+                            <b>Rooms for Rent: <span class="badge badge-pill badge-success">[Replace with count]</span></b>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="../app/list.html">
+                        <div class="alert alert-warning" role="alert">
+                            <b>Registered Rooms: <span class="badge badge-pill badge-success">[Replace with count]</span></b>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Include footer -->
+</body>
+</html>

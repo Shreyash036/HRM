@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+   <!-- Include CSS files here -->
+   <link  href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="rent.css">
+</head>
+<body>
+    <!-- JavaScript to include sidebar -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            $("#sidebar").load("side-nav.html");
+            $("#individualContent").load("auth/individual.html");
+
+            $("#apartmentContent").load("auth/appartment.html");
+
+        });
+    </script>
+    <div id="sidebar"></div>
+
+   
+    <br>
+    <br>
+  
+  
+  <section class="wrapper" style="margin-left: 16%; margin-top: -11%;">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#home" role="tab">Individual Home Registration</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#profile" role="tab">Apartment Registration</a>
+      </li>
+    </ul>
+
+    <div class="tab-content">
+      <!-- Single room -->
+      <div class="tab-pane active" id="home" role="tabpanel"><br>
+        <!-- Content of individual.html will be loaded here -->
+        <div id="individualContent"></div>
+      </div>
+
+      <!-- Apartment -->
+      <div class="tab-pane" id="profile" role="tabpanel">
+        <!-- Include content of apartment.html or apartment.html here -->
+        <div id="apartmentContent"></div> 
+      </div>
+
+     
+    </div>
+  </section>
+
+  <footer>
+    <!-- Your footer content here -->
+  </footer>
+
+  <script type="text/javascript">
+    var rowCount = 1;
+    function addMoreRows(frm) {
+      rowCount ++;
+      var recRow = 'Your dynamic form row HTML here';
+      $('#addedRows').append(recRow);
+    }
+    function removeRow(removeNum) {
+      $('#rowCount'+removeNum).remove();
+    }
+  </script>
+</body>
+</html>
